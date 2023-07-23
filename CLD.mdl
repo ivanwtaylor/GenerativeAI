@@ -1,0 +1,168 @@
+{UTF-8}
+perception of AI quality  = A FUNCTION OF( Community Beliefs,Community Knowledge,Quality of AI Tools\
+		,Quality of Social Discourse,Workers)
+	~	
+	~		|
+
+Community Beliefs  = A FUNCTION OF( perception of AI quality,Quality of Social Discourse\
+		) ~~|
+Community Beliefs= INTEG (
+	change in community beliefs,
+		INITIAL COMMUNITY BELIEFS)
+	~	Dmnl
+	~		|
+
+Community Knowledge  = A FUNCTION OF( perception of AI quality,Quality of Social Discourse\
+		) ~~|
+Community Knowledge= INTEG (
+	change in community knowledge,
+		INITIAL COMMUNITY KNOWLEDGE)
+	~	Dmnl
+	~		|
+
+Quality of AI Tools  = A FUNCTION OF( Policy Interventions) ~~|
+Quality of AI Tools= INTEG (
+	change in quality of AI tools,
+		INITIAL QUALITY OF AI TOOLS)
+	~	Dmnl
+	~		|
+
+Institution AI Tool Adoption  = A FUNCTION OF( perception of AI quality) ~~|
+Institution AI Tool Adoption= INTEG (
+	institution adoption-institution abandonment,
+		INITIAL INSTITUTIONS)
+	~	institutions
+	~		|
+
+Policy Interventions  = A FUNCTION OF( )
+	~	
+	~		|
+
+Quality of Social Discourse  = A FUNCTION OF( perception of AI quality) ~~|
+Quality of Social Discourse= INTEG (
+	change in quality of social discourse,
+		INITIAL QUALITY OF SOCIAL DISCOURSE)
+	~	Dmnl
+	~		|
+
+User AI Tool Adoption  = A FUNCTION OF( perception of AI quality) ~~|
+User AI Tool Adoption= INTEG (
+	user adoption-user abandonment,
+		INITIAL USERS)
+	~	people
+	~		|
+
+Workers  = A FUNCTION OF( Institution AI Tool Adoption,User AI Tool Adoption) ~~|
+Workers= INTEG (
+	supply of AI workers,
+		INITIAL WORKERS)
+	~	people
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.125
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,User AI Tool Adoption,667,85,49,32,3,131,0,0,0,0,0,0
+10,2,Institution AI Tool Adoption,966,106,50,31,3,131,0,0,0,0,0,0
+10,3,Community Knowledge,973,473,56,34,3,131,0,0,0,0,0,0
+10,4,Community Beliefs,1133,207,54,28,3,131,0,0,0,0,0,0
+10,5,Quality of Social Discourse,679,550,66,32,3,131,0,0,0,0,0,0
+10,6,User AI Tool Adoption,1495,85,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,7,Institution AI Tool Adoption,1480,314,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,8,Quality of AI Tools,595,228,53,36,3,131,0,0,0,0,0,0
+10,9,Institution AI Tool Adoption,1482,195,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,10,User AI Tool Adoption,1491,241,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,11,Workers,816,48,50,29,3,131,0,0,0,0,0,0
+10,12,Policy Interventions,389,268,41,19,8,3,0,0,0,0,0,0
+1,13,12,8,1,0,0,0,0,64,0,-1--1--1,,1|(474,235)|
+1,14,1,11,1,0,0,0,0,64,0,-1--1--1,,1|(689,40)|
+1,15,2,11,1,0,0,0,0,64,0,-1--1--1,,1|(946,61)|
+10,16,perception of AI quality,809,287,53,19,8,3,0,0,0,0,0,0
+1,17,8,16,1,0,0,0,0,64,0,-1--1--1,,1|(688,239)|
+1,18,4,16,1,0,0,0,0,64,0,-1--1--1,,1|(1013,184)|
+1,19,3,16,1,0,0,0,0,64,0,-1--1--1,,1|(951,378)|
+1,20,5,16,1,0,0,0,0,64,0,-1--1--1,,1|(768,463)|
+1,21,16,1,1,0,0,0,0,64,0,-1--1--1,,1|(722,217)|
+1,22,16,2,1,0,0,0,0,64,0,-1--1--1,,1|(850,187)|
+1,23,16,5,1,0,0,0,0,64,0,-1--1--1,,1|(665,397)|
+1,24,16,3,1,0,0,0,0,64,0,-1--1--1,,1|(844,377)|
+1,25,16,4,1,0,0,0,0,64,0,-1--1--1,,1|(1005,276)|
+1,26,5,3,1,0,0,0,0,64,0,-1--1--1,,1|(795,571)|
+1,27,5,4,1,0,0,0,0,64,0,-1--1--1,,1|(1000,646)|
+1,28,11,16,1,0,0,0,0,64,0,-1--1--1,,1|(788,187)|
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 2
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 3
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,User AI Tool Adoption,974,87,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,2,Institution AI Tool Adoption,1258,322,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 4
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 5
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,Institution AI Tool Adoption,880,174,63,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+10,2,User AI Tool Adoption,507,458,48,19,8,2,0,3,-1,0,0,0,128-128-128,0-0-0,|12||128-128-128
+///---\\\
+:L<%^E!@
+1:C:\Users\Ivan\Documents\AAA Ivans Work\AAA System_Dynamics\ISDC\Hoped For.vdf
+9:Feared
+22:$,Dollar,Dollars,$s
+22:Hour,Hours
+22:Month,Months
+22:Person,People,Persons
+22:Unit,Units
+22:Week,Weeks
+22:Year,Years
+22:Day,Days
+15:0,0,0,0,0,0
+19:100,0
+27:2,
+34:0,
+4:Time
+5:Community Beliefs
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+24:0
+25:24
+26:24
